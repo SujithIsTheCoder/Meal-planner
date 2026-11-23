@@ -1,0 +1,7 @@
+{
+  "appId": "in.family.mealplanner",
+  "appName": "Meal Planner",
+  "webDir": "www",
+  "backgroundColor": "#fbf5e9",
+  "android": { "allowMixedContent": false }
+}

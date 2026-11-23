@@ -1,0 +1,25 @@
+{
+  "name": "indian-meal-planner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Smart Indian meal planner (breakfast + lunch) – React, offline, Android-ready via Capacitor",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node tests/engine.test.mjs",
+    "android:add": "npx cap add android",
+    "android:sync": "npm run build && npx cap sync android",
+    "android:apk": "npm run android:sync && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/android": "^7.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "@capacitor/cli": "^7.0.0",
+    "sharp": "^0.34.0"
+  }
+}
